@@ -21,8 +21,7 @@ class App extends Component {
                     <Route exact path='/Spells' component={Spells} />
                     <Route exact path='/Feats' component={Feats} />
                     <Route exact path='/Backgrounds' component={Backgrounds} />
-                    <Route exact path='/404' component={NotFound} />
-                    <Redirect to="/404" />
+                    <Route path="*" component={NotFound} />
                 </main>
                 <Footer />
             </Router>
